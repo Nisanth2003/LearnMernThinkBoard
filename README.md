@@ -1,44 +1,52 @@
-MERN - M(MONGO DB),E(EXPRESS JS),R(REACT),N(NODE JS).
+# 🚀 MERN Stack Overview
 
-M
--database where we store our data.
+**MERN** stands for:
 
-E
--a web framework is a ready-to-use toolbox for building web apps faster and more easily.
+- **M** – MongoDB  
+- **E** – Express.js  
+- **R** – React.js  
+- **N** – Node.js  
 
-why use a web framework?
-saves time 
-make code clean and organized.
-handle common task(like routing,error handling,etc).
+---
 
-N(also known as javascript runtime)
--allow you to run js on server.
--normally we can run js on the client such as browser but node js wiil help run js on the server.
+## 🟢 M — MongoDB
 
+- A database where we store our data.
 
-R
--our front end lib.
+---
 
-Setup for backend.
-commands to run.
+## 🟡 E — Express.js
 
-1)npm init -y.
--to intialize a node js application.
--which will generate a package.json file
+- A web framework (a ready-to-use toolbox) for building web applications faster and more easily.
 
-2)npm install express@4.18.2
--this command install the express.
--@98.383 define the version without this it will install latest version.
+### ❓ Why use a web framework?
 
-after this command you should see node_modules which contains the library and package-lock.json
+- Saves time  
+- Makes code clean and organized  
+- Handles common tasks (routing, error handling, etc.)  
 
-later create a file with one of these(app,server,index).js
+---
 
-and write the default code.you can run it either by the command or changing the default in the package.json in scripts like{dev : node index.js}.
+## 🟣 N — Node.js  
+(Also known as a JavaScript runtime)
 
-command :- node server.js
+- Allows you to run JavaScript on the server.  
+- Normally, JavaScript runs on the client side (browser).  
+- Node.js helps run JavaScript on the backend (server).
 
-for module specification warning.
-in package.json add this line below scripts.
-line :-"type":"module"
+---
 
+## 🔵 R — React.js
+
+- Our frontend library used to build user interfaces.
+
+---
+
+# ⚙️ Backend Setup
+
+## 📌 Commands to Run
+
+### 1️⃣ Initialize Node.js Application
+
+```bash
+npm init -y
