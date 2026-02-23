@@ -63,6 +63,9 @@ npm init -y
 bash
 npm install
 This will install all the necessary libraries defined in package.json.
+```
+
+---
 
 3️⃣ Custom Scripts in package.json
 If you want to add custom commands like:
@@ -72,19 +75,25 @@ npm start
 npm run dev
 Add them in the scripts section of package.json:
 
+```bash
 json
 "scripts": {
   "start": "node server.js",
   "dev": "nodemon server.js",
   "devara": "node server.js"
 }
-Now you can run:
+```
 
+Now you can run:
+```bash
 npm start - for production
 
 npm run dev - for development with auto-reload
 
 npm run devara - to start with your custom command
+
+```
+---
 
 📡 What is an API?
 API (Application Program Interface) allows two applications to communicate with each other.
@@ -99,6 +108,8 @@ Database (MongoDB) = Kitchen preparing the food
 
 API = The communication process between them
 
+---
+
 🔌 Types of APIs
 REST API
 Uses HTTP methods - most commonly used approach.
@@ -111,31 +122,37 @@ PUT → Update a post
 
 DELETE → Delete a post
 
+---
 SOAP API
 Uses XML format with strict protocol rules. Mostly used in enterprise applications.
 
 Example: Banking system transferring money between accounts using secure XML requests
 
+---
 GraphQL API
 Allows clients to request only the data they need. Developed by Facebook.
 
 Example: Fetch only username and profile picture instead of full user details
 
+---
 gRPC API
 High-performance API using Protocol Buffers and HTTP/2. Created by Google.
 
 Example: Communication between microservices in a food delivery app
 
+---
 WebSocket API
 Provides real-time, two-way communication between client and server.
 
 Example: Live chat feature in WhatsApp
 
+---
 OpenAPI
 A specification to describe REST APIs for easy understanding and testing.
 
 Example: API documentation generated using Swagger tools
 
+---
 📊 HTTP Status Codes
 1xx — Informational
 Request received, continuing process.
@@ -169,6 +186,7 @@ The server failed to fulfill a valid request.
 500 Internal Server Error — Something broke on the server
 
 503 Service Unavailable — Server temporarily overloaded or down
+---
 
 🛠️ Debugging Tips
 To check HTTP errors:
@@ -183,6 +201,7 @@ Select All or Fetch/XHR
 
 Refresh the page to see API calls and their status codes
 
+---
 🔄 Development vs Production
 Using Nodemon for Development
 Without nodemon, you have to manually restart the server after every code change.
@@ -193,12 +212,13 @@ npm install nodemon -D
 The -D flag installs it as a dev dependency (only needed during development).
 
 Update package.json scripts:
-
+```bash
 json
 "scripts": {
   "start": "node server.js",
   "dev": "nodemon server.js"
 }
+```
 Now when you run:
 
 bash
