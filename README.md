@@ -47,7 +47,8 @@ markdown
 Frontend Backend Database
 React → Node.js + Express → MongoDB
 
-text
+
+![App Flow Diagram](image.png)
 
 ---
 
