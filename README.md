@@ -95,7 +95,7 @@ npm run devara - to start with your custom command
 ```
 ---
 
-📡 What is an API?
+## 📡 What is an API?
 API (Application Program Interface) allows two applications to communicate with each other.
 
 Think of it like a waiter in a restaurant:
@@ -110,8 +110,9 @@ API = The communication process between them
 
 ---
 
-🔌 Types of APIs
-REST API
+# 🔌 Types of APIs
+
+## REST API
 Uses HTTP methods - most commonly used approach.
 
 GET → Get posts on Instagram
@@ -122,52 +123,50 @@ PUT → Update a post
 
 DELETE → Delete a post
 
----
-SOAP API
+
+## SOAP API
 Uses XML format with strict protocol rules. Mostly used in enterprise applications.
 
 Example: Banking system transferring money between accounts using secure XML requests
 
----
-GraphQL API
+
+## GraphQL API
 Allows clients to request only the data they need. Developed by Facebook.
 
 Example: Fetch only username and profile picture instead of full user details
 
----
-gRPC API
+## gRPC API
 High-performance API using Protocol Buffers and HTTP/2. Created by Google.
 
 Example: Communication between microservices in a food delivery app
 
----
-WebSocket API
+
+## WebSocket API
 Provides real-time, two-way communication between client and server.
 
 Example: Live chat feature in WhatsApp
 
----
-OpenAPI
+## OpenAPI
 A specification to describe REST APIs for easy understanding and testing.
 
 Example: API documentation generated using Swagger tools
 
 ---
-📊 HTTP Status Codes
-1xx — Informational
+# 📊 HTTP Status Codes
+## 1xx — Informational
 Request received, continuing process.
 
-2xx — Success
+## 2xx — Success
 200 OK — Everything worked as expected
 
 201 Created — New resource successfully created (e.g., after POST request)
 
-3xx — Redirection
+## 3xx — Redirection
 The client needs to take additional action to complete the request.
 
 301 Moved Permanently — Resource has moved to a new URL
 
-4xx — Client Errors
+## 4xx — Client Errors
 The problem is on the client side (bad request).
 
 400 Bad Request — Malformed or invalid request
@@ -180,7 +179,7 @@ The problem is on the client side (bad request).
 
 429 Too Many Requests — Rate limit exceeded
 
-5xx — Server Errors
+## 5xx — Server Errors
 The server failed to fulfill a valid request.
 
 500 Internal Server Error — Something broke on the server
@@ -188,7 +187,7 @@ The server failed to fulfill a valid request.
 503 Service Unavailable — Server temporarily overloaded or down
 ---
 
-🛠️ Debugging Tips
+# 🛠️ Debugging Tips
 To check HTTP errors:
 
 Open your browser
@@ -202,7 +201,7 @@ Select All or Fetch/XHR
 Refresh the page to see API calls and their status codes
 
 ---
-🔄 Development vs Production
+## 🔄 Development vs Production
 Using Nodemon for Development
 Without nodemon, you have to manually restart the server after every code change.
 Install nodemon as a dev dependency:
