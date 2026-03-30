@@ -555,3 +555,22 @@ node_modules/
 > This gives you: DB setup → app entry point → data structure.
 
 ---
+
+error
+"Error connecting to MONGO DB: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.aj8film.mongodb.net at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) { errno: undefined, code: 'ECONNREFUSED', syscall: 'querySrv', hostname: '_mongodb._tcp"
+
+this is because your ip adress has changed and mongo db is not connected 
+so add 8.8.8.8 to dns and disable Mcfree.
+
+open command prompt as admin
+Then reset network stack
+
+netsh winsock reset
+netsh int ip reset
+ipconfig /flushdns
+
+Restart system after this.
+
+it should work us this to check
+nslookup -type=SRV _mongodb._tcp.cluster0.aj8film.mongodb.net
+
